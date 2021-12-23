@@ -22,6 +22,28 @@
             margin-bottom: 0;
             padding-left: 1em;
         }
+        h2 {
+          overflow: hidden;
+          text-align: center;
+        }
+        h2:before,
+        h2:after {
+          background-color: #000;
+          content: "";
+          display: inline-block;
+          height: 1px;
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+        }
+        h2:before {
+          right: 0.5em;
+          margin-left: -50%;
+        }
+        h2:after {
+          left: 0.5em;
+          margin-right: -50%;
+        }
     </style>
 
     <body>
@@ -49,7 +71,7 @@
 
         <div>
             <br>
-            I am a fourth-year PhD student in the
+            I am a PhD student in the
             <a href="https://www.imperial.ac.uk/robot-intelligence/">Robot Intelligence Lab</a> at
             <a href="https://www.imperial.ac.uk/">Imperial College London</a>.<br>
             My main research focuses on Deep Reinforcement Learning.<br><br>
@@ -59,7 +81,7 @@
             <h2>Education</h2>
             <table>
                 <tr>
-                    <td width="350">
+                    <td width="300">
                         <img src="images/imperial.png" height="50"/>
                     </td>
                     <td>
@@ -107,17 +129,28 @@
         </div>
 
         <div>
-            <h2>Research Internships</h2>
+            <h2>Internships</h2>
             <table>
                 <tr>
-                    <td width="350">
+                    <td width="300">
+                        <img src="images/deepmind.png" height="40"/>
+                    </td>
+                    <td>
+                        <b>2021</b><br>
+                        <b>Learning to plan</b><br>
+                        André Barreto, Théophane Weber, Arthur Guez, Peter Humphreys, Timothy Lillicrap, Mehdi Mirza<br>
+                        @ DeepMind (Reinforcement Learning team), London, UK
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <img src="images/deepmind.png" height="40"/>
                     </td>
                     <td>
                         <b>2019</b><br>
                         <b>Motor primitives and competitive self-play</b><br>
                         Raia Hadsell, Nicolas Heess, Josh Merel and Leonard Hasenclever<br>
-                        @ DeepMind, London, UK
+                        @ DeepMind (Deep Learning team), London, UK
                     </td>
                 </tr>
                 <tr>
@@ -171,17 +204,57 @@
         </div>
 
         <div>
-            <h2>Publications</h2>
+            <h2>Research</h2>
             <table>
                 <tr>
-                    <td width="350">
+                    <td width="300">
+                        <img src="images/ostrichrl.gif" height="120"/>
+                    </td>
+                    <td>
+                        <b>OstrichRL: A Musculoskeletal Ostrich Simulation to Study Bio-mechanical Locomotion</b><br>
+                        Vittorio La Barbera*, Fabio Pardo*, Yuval Tassa, Monica Daley, Christopher Richards, Petar Kormushev, John Hutchinson (* equal contribution)<br>
+                        @ NeurIPS' deep RL workshop 2021<br>
+                        <a href="https://arxiv.org/abs/2112.06061">Paper</a>,
+                        <a href="posters/ostrichrl.pdf">poster</a>,
+                        <a href="https://sites.google.com/view/ostrichrl/home">Website</a> and
+                        <a href="https://github.com/vittorione94/ostrichrl">code</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/ivy.png" height="80"/>
+                    </td>
+                    <td>
+                        <b>Ivy: Templated Deep Learning for Inter-Framework Portability</b><br>
+                        Daniel Lenton, Fabio Pardo, Fabian Falck, Stephen James, Ronald Clark<br>
+                        <a href="https://arxiv.org/abs/2102.02886">Paper</a>,
+                        <a href="https://ivy-dl.org/">website</a> and
+                        <a href="https://github.com/ivy-dl/ivy">code</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/tonic.png" height="80"/><br><br>
+                    </td>
+                    <td>
+                        <b>Tonic: A Deep Reinforcement Learning Library for Fast Prototyping and Benchmarking</b><br>
+                        Fabio Pardo<br>
+                        @ NeurIPS' deep RL workshop 2020<br>
+                        <a href="https://arxiv.org/abs/2011.07537">Paper</a>,
+                        <a href="posters/tonic.pdf">poster</a>,
+                        <a href="https://github.com/fabiopardo/tonic">code</a> and
+                        <a href="https://github.com/fabiopardo/tonic_data">data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <img src="images/comic.gif" height="100"/>
                     </td>
                     <td>
                         <b>CoMic: Complementary Task Learning & Mimicry for Reusable Skills</b><br>
                         Leonard Hasenclever, Fabio Pardo, Raia Hadsell, Nicolas Heess, Josh Merel<br>
                         @ ICML 2020<br>
-                        <a href="https://proceedings.icml.cc/static/paper_files/icml/2020/5013-Paper.pdf">Paper</a> and
+                        <a href="http://proceedings.mlr.press/v119/hasenclever20a.html">Paper</a> and
                         <a href="https://github.com/deepmind/dm_control/tree/master/dm_control/locomotion/tasks/reference_pose">code</a>
                     </td>
                 </tr>
@@ -203,8 +276,9 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="images/time-limited_Hopper.gif" height="100"/>
-                        <img src="images/time-unlimited_Hopper.gif" height="100"/>
+                        <img src="images/time_limits_std.png" height="80"/>
+                        <img src="images/time_limits_ta.png" height="80"/>
+                        <img src="images/time_limits_peb.png" height="80"/>
                     </td>
                     <td>
                         <b>Time Limits in Reinforcement Learning</b><br>
@@ -233,35 +307,10 @@
         </div>
 
         <div>
-            <h2>Softwares</h2>
-            <table>
-                <tr>
-                    <td width="350">
-                        <img src="images/tonic.png" height="70"/><br><br>
-                        <img src="images/tonic.gif" height="100"/>
-                    </td>
-                    <td>
-                        <b>Tonic: A Deep Reinforcement Learning Library for Fast Prototyping and Benchmarking</b><br>
-                        <ul>
-                            <li>a collection of configurable modules such as: exploration strategies, memories, neural networks, and optimizers</li>
-                            <li>a collection of baseline agents built with these modules</li>
-                            <li>support for the two most popular deep learning frameworks: TensorFlow and PyTorch</li>
-                            <li>support for the three most popular sets of continuous control environments: OpenAI Gym, DeepMind Control Suite and PyBullet</li>
-                            <li>a large-scale benchmark of the baseline agents on 70 tasks</li>
-                            <li>scripts to train in a reproducible way, plot results, and play with trained agents.</li>
-                        </ul>
-                        <a href="https://github.com/fabiopardo/tonic">Repository</a> and
-                        <a href="https://github.com/fabiopardo/tonic_data">data</a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div>
             <h2>Miscellaneous</h2>
             <table>
                 <tr>
-                    <td width="350">
+                    <td width="300">
                         <img src="images/imperial.png" height="50"/>
                     </td>
                     <td>
@@ -272,7 +321,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td width="350">
+                    <td>
                         <img src="images/imperial.png" height="50"/>
                     </td>
                     <td>
